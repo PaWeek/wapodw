@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<form method="post" asp-controller="Home" asp-action="Contact">
+    
+    <div class="form-control">
+        <label>Email:</label>
+        <input placeholder="email" name="email" />
+        <label>Name:</label>
+        <input placeholder="name" name="name" />
+        <label>Phone number:</label>
+        <input placeholder="phone number" name="phoneNumber" />
+    </div>
+    
+    <button type="submit" class="btn btn-sm btn-primary">Save</button>
+</form>
+
+
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
